@@ -1,0 +1,376 @@
+/* Internal FLASH linker command file for CCFC2016BC                        */
+/*                                                                          */
+/*   +-----------+------------+------------+------------+                   */
+/*   |  Device   | MPC5674F   | MPC5673F   | CCFC2016BC |                   */
+/*   +-----------+------------+------------+------------+                   */
+/*   |SRAM/Flash | 256KB/     | 192KB/     | 288KB/     |                   */
+/*   |           | 4MB        | 3MB        | 2.5MB      |                   */
+/*   +-----------+------------+------------+------------+                   */
+/*                                                                          */
+/* Intended to be used for the stationary example project.                  */
+/*                                                                          */
+/* VERSION: 1.2                                                             */
+
+MEMORY
+{
+	/***
+	 * CFlash
+	 * +=================================================================================================+
+	 * | Bank | Sector | Module |       Addresses       | Size(KB) | Address | DFLASH_LML field for      | 
+	 * |      |        |        |                       |          | Space   | locking the address space |
+	 * |-------------------------------------------------------------------------------------------------|
+	 * |   0  |   0    |    0   | 0x00000000：C0x00007FFF |    32    |  Low    | LLK0                      |
+	 * |   0  |   1    |    0   | 0x00008000：C0x0000BFFF |    16    |  Low    | LLK1                      |
+	 * |   0  |   2    |    0   | 0x0000C000：C0x0000FFFF |    16    |  Low    | LLK2                      |
+	 * |   0  |   3    |    0   | 0x00010000：C0x00017FFF |    32    |  Low    | LLK3                      |
+	 * |   0  |   4    |    0   | 0x00018000：C0x0001FFFF |    32    |  Low    | LLK4                      |
+	 * |   0  |   5    |    0   | 0x00020000：C0x0003FFFF |    128   |  Low    | LLK0                      |
+	 * |   0  |   6    |    0   | 0x00040000：C0x0005FFFF |    128   |  Mid    | MLK0                      |
+	 * |   0  |   7    |    0   | 0x00060000：C0x0007FFFF |    128   |  Mid    | MLK1                      |
+	 * |   0  |   8    |    0   | 0x00080000：C0x0009FFFF |    128   |  High   | HLK0                      |
+	 * |   0  |   9    |    0   | 0x000A0000：C0x000BFFFF |    128   |  High   | HLK1                      |
+	 * |   0  |   10   |    0   | 0x000C0000：C0x000DFFFF |    128   |  High   | HLK2                      |
+	 * |   0  |   11   |    0   | 0x000E0000：C0x000FFFFF |    128   |  High   | HLK3                      |
+	 * |   0  |   12   |    0   | 0x00100000：C0x0011FFFF |    128   |  High   | HLK4                      |
+	 * |   0  |   13   |    0   | 0x00120000：C0x0013FFFF |    128   |  High   | HLK5                      |
+	 * |   0  |   14   |    0   | 0x00140000：C0x0015FFFF |    128   |  High   | HLK6                      |
+	 * |   0  |   15   |    0   | 0x00160000：C0x0017FFFF |    128   |  High   | HLK7                      |
+	 * |   0  |   16   |    0   | 0x00180000：C0x0019FFFF |    128   |  High   | HLK8                      |
+	 * |   0  |   17   |    0   | 0x001A0000：C0x001BFFFF |    128   |  High   | HLK9                      |
+	 * |   0  |   18   |    0   | 0x001C0000：C0x001DFFFF |    128   |  High   | HLK10                     |
+	 * |   0  |   19   |    0   | 0x001E0000：C0x001FFFFF |    128   |  High   | HLK11                     |
+	 * |   0  |   20   |    0   | 0x00200000：C0x0021FFFF |    128   |  High   | HLK12                     |
+	 * |   0  |   21   |    0   | 0x00220000：C0x0023FFFF |    128   |  High   | HLK13                     |
+	 * |   0  |   22   |    0   | 0x00240000：C0x0025FFFF |    128   |  High   | HLK14                     |
+	 * |   0  |   23   |    0   | 0x00260000：C0x0027FFFF |    128   |  High   | HLK15                     |
+	 * |   0  | Shadow |    0   | 0x00400000：C0x00403FFF |    16    |  Shadow | TSLK                      |
+	 * |   0  |  Test  |    0   | 0x00400000：C0x00403FFF |    16    |  Test   | TSLK                      |
+	 * +=================================================================================================+
+	 ***/
+
+
+    /* FLASH: 0x00000000 - 0x0003FFFFF */
+    /* Fixed location required for RCHW and program entry point*/
+    /*resetvector:        org = 0x00000000,   len = 0x00000008*/
+    resetvector:        org = 0x00018000,   len = 0x00000008
+
+    /* Contains initializations from __ppc_eabi_init.c,
+     MPC56xx_HWInit.c, MPC56xx_init_*.c and the entry point (__startup).
+     Should be 4K since the hardware automatically creates a default TLB entry
+     from the start of the entry point specified in RCHW.
+     */
+    /*init:               org = 0x00000020,   len = 0x00000FE0*/  /* ~4K */
+    init:               org = 0x00018020,   len = 0x00000FE0  /* ~4K */
+
+    /* ~63K gap required to align the exception handlers.*/
+
+    /* Contains interrupt branch tables for both core and INTC module
+     and the ISR handlers code. Note, the gap is required since the vector
+     base address field of core IVPR is defined within the range [0:15], the
+     INTC branch tables must be loaded at an address aligned to 64K boundary.
+     */
+    /*exception_handlers: org = 0x00001000,   len = 0x00001000*/ /* ~8K */
+    exception_handlers: org = 0x00019000,   len = 0x00001000 /* ~4K */
+
+    /* Space allocated for user code and device initialization.
+    ROM Image address should be set with the start address of this
+    segment in order to instruct the runtime to initialize the
+    static variables. All the section above are ignored for this action. 
+    Please see -romaddr linker option.*/
+	flag:               org = 0x00018000    len = 0x00002000
+    internal_flash:     org = 0x0001A000,   len = 0x00226000 /* ~2,224K */
+    boot_conf_rom:			org = 0x00010000    len = 0x00008000 /* ~32K */
+	
+	
+	/***
+	 * DFlash
+	 * +========================================================================================+
+	 * | Bank | Sector |       Addresses       | Size(KB) | Address | DFLASH_LML field for      | 
+	 * |      |        |                       |          | Space   | locking the address space |
+	 * |----------------------------------------------------------------------------------------|
+	 * |   0  |   0    | 0x00800000：C0x0081FFFF |    128   |  Low    | LLK0                      |
+	 * |   0  |   1    | 0x00820000：C0x0083FFFF |    128   |  Low    | LLK1                      |
+	 * |   0  |   2    | 0x00840000：C0x0085FFFF |    128   |  Low    | LLK2                      |
+	 * |   0  |   3    | 0x00860000：C0x0087FFFF |    128   |  Low    | LLK3                      |
+	 * |   0  |  Test  | 0x00C00000：C0x00C03FFF |    16    |  Test   | TSLK                      |
+	 * +========================================================================================+
+	 ***/
+	fnvm_data_flag:     org = 0x00240000    len = 0x00002000 /* 8K */
+	ufnvm_data_flag:    org = 0x00242000    len = 0x00002000 /* 8K */
+	fnvm_init:          org = 0x00244000    len = 0x00002000 /* 8K */
+	ufnvm_init:         org = 0x00246000    len = 0x00002000 /* 8K */
+	
+	cal_data_rom:       org = 0x00260000    len = 0x00020000 /* 128K */    /* calibration data flash*/
+	
+	fnvm_data_rom:     org = 0x00820000    len = 0x00002000 /* 8K */
+	ufnvm_data_rom:    org = 0x00822000    len = 0x00002000 /* 8K */
+	
+	
+	/***
+	 * TestFlash block
+	 * +=================================================================+
+	 * |   Name      | Description            | Address        | Size(B) |
+	 * |-----------------------------------------------------------------|
+	 * |   --        | User OTP area          | 0x480000：C0x481FFF | 8192 |
+	 * |   --        | Reserved               | 0x482000：C0x483CFF | 7424 |
+	 * |   --        | User OTP area          | 0x483D00：C0x483DE7 | 232  |
+	 * | CFalsh Lock | Space Locking Register | 0x483DE8-0x483DFF | 24   |
+	 * |   --        | User OTP area          | 0x483E00：C0x483EFF | 256  |
+	 * |   --        | Reserved               | 0x483F00：C0x483FFF | 256  |  
+	 * |   --        | User OTP area          | 0xC00000：C0xC01FFF | 8192 |  
+	 * |   --        | Reserved               | 0xC02000：C0xC03CFF | 7424 |  
+	 * |   --        | User OTP area          | 0xC03D00：C0xC03DE7 | 232  |  
+	 * | CFalsh Lock | Space Locking Register | 0xC03DE8：C0xC03DFF | 24   |  
+	 * |   --        | User OTP area          | 0xC03E00：C0xC03EFF | 256  |  
+	 * |   --        | Reserved               | 0xC03F00：C0xC03FFF | 256  |  
+	 * +=================================================================+
+	 */
+	
+	
+	/*main_text:          org = 0x00020000    len = 0x00240000*/
+
+    /* SRAM: 0x40000000 - 0x40067FFF , total 416K */
+    cal_data_ram:		org = 0x40000000,   len = 0x00010000 /* 64K */
+    msr_data_ram:       org = 0x40010000,   len = 0x00002000 /* 8K */
+    /* reserve:         org = 0x40012000,   len = 0x00002000    8K */
+    fnvm_data_ram:      org = 0x40014000,   len = 0x00002000 /* 8K */
+    ufnvm_data_ram:     org = 0x40016000,   len = 0x00002000 /* 8K */
+    internal_ram:       org = 0x40018000,   len = 0x00047000 /* 380-96KB */
+    heap  :             org = 0x4005F000,   len = 0x00001000 /* 4KB Heap start location */
+    stack :             org = 0x40060000,   len = 0x00008000 /* 32KB Start location for Stack */
+}
+
+/* This will ensure the rchw and reset vector are not stripped by the linker */
+FORCEACTIVE { "bam_rchw" "bam_resetvector"}
+
+SECTIONS
+{
+    .__boot_conf LOAD (ADDR(boot_conf_rom)): {} > boot_conf_rom 
+    .__bam_bootarea LOAD (ADDR(resetvector)): {} > resetvector
+
+    /* Section used for initialization code: __ppc_eabi_init.c,
+     MPC56xx_HWInit.c, MPC56xx_init_*.c and the entry point (__startup).
+     */
+    GROUP  : {
+        .init LOAD (ADDR(init)) : {}
+        .init_vle (VLECODE) LOAD (_e_init) : {
+            *(.init)
+            *(.init_vle)
+        } 
+    } > init
+
+   /* Note: _e_ prefix enables load after END of that specified section */
+   GROUP : {
+        /* Special section for INTC branch table required in hardware mode.
+        Place the .intc_hw_branch_table section first in order to used both core and INTC
+        tables. The intc_hw_branch_table should contain entries aligned to 16 bytes.
+        */
+        .intc_hw_branch_table (VLECODE) LOAD (ADDR(exception_handlers)) ALIGN (0x10) : {}
+ 
+        /* Because the core IVORx are settable the IVOR branch table can be placed
+        after the INTC HW table.*/
+        .ivor_branch_table (VLECODE) LOAD (_e_intc_hw_branch_table) ALIGN (0x10) : {}
+        /* ISR handlers code. */
+        .__exception_handlers (VLECODE) LOAD (_e_ivor_branch_table) : {}
+   } > exception_handlers
+
+    GROUP  : {
+      .version : {}   /*It is not allowed to move the position. This section requires the address to be 0x1A000*/
+      .identifier : {}
+      .text : {} 
+      .text_vle (VLECODE) : {
+            *(.text)
+            *(.text_vle)
+       }
+       
+       .rodata (CONST) : {
+            *(.rdata)
+            *(.rodata)
+        }
+       
+       .ctors : {}
+       .dtors : {}
+       extab : {}
+       extabindex : {}
+    } > internal_flash
+   
+    /*GROUP : 
+	{
+		.cal_data_off  : {}				
+	} > cal_data_rom*/
+    
+
+    /*GROUP :
+    {
+    	.fnvm_data :
+    	{
+    	  
+    	   *(.fnvm_data)
+    	  
+		} 
+    } > fnvm_data_rom 
+
+
+    
+    GROUP :
+    {
+    	.fnvm_flag : {}
+    } > fnvm_data_rom */
+	
+	GROUP :
+	{
+		.flag :
+		{
+	      __FIRST_FLAG_START = .;
+
+	      __FIRST_FLAG_END = .; 	
+		}
+	} >flag
+	GROUP :
+	{
+		.nvm_flag : 
+		{
+	      __UNVM_FLAG_START = .;
+            *(.nvm_flag)
+    	  __UFNVM_FLAG_END = .;
+		} 
+	}>internal_flash
+	
+	GROUP :
+	{
+	      __FNVM_RAM_START = .;
+		.nvm_data :
+		{
+		  
+
+    	} 
+
+      	  __FNVM_RAM_END = .;
+      	  
+      	  __UFNVM_RAM_START = .;
+      	 .ufnvm_data :
+      	 {
+      	 
+      	 }
+      	  __UFNVM_RAM_END = .;	
+	}>internal_ram
+
+	GROUP : 
+	{
+		.__calibration_rom LOAD (ADDR(cal_data_rom)):
+		{
+			*(.__calibration_rom)
+		}				
+	} > cal_data_ram 
+	
+	
+/*
+    GROUP : 
+	{
+		.cal_data_on LOAD (ADDR(cal_data_ram)): {}				
+	} > cal_data_ram 
+*/
+
+	GROUP : {
+	   .__measurement_ram : {}
+	   .user_defined_section : {}
+       .user_defined_section_vle (VLECODE) : {
+       		*(.user_defined_section)
+       		*(.user_defined_section_vle)
+       	}
+    } > internal_ram 
+
+
+
+    GROUP : {
+       /* This section is used in INTC SW mode to store the interrupt handlers array.
+        Although INTC_IACKR.VTBA is 21-bit wide it should be aligned to 4K since if
+        INTC_MCR.VTES == 0 only 20 bits are actually used.*/
+       .__uninitialized_intc_handlertable ALIGN(0x1000) : {}
+       .data   : {}
+       .sdata  : {
+        __sdata_start = .;
+        __UFNVM_FLAG_START = .;
+        *(.sdata)
+        __sdata_end = .;
+       }
+       .sbss   : {}
+       .sdata2 : {}
+       .sbss2  : {}
+       .bss    : {}
+    } > internal_ram
+    
+
+    
+    
+    
+	GROUP : 
+	{
+		.cal_data LOAD (ADDR(cal_data_rom)):
+		{
+    	  KEEP(*(.cal_data_on))
+		}				
+	} > cal_data_ram 
+	
+	GROUP :
+	{
+		.fnvm_data LOAD (ADDR(fnvm_init)):
+		{
+    	  KEEP(*(.fnvm_data))
+		}
+	} > fnvm_data_ram
+	
+	/*GROUP :
+	{
+		.ufnvm_data LOAD (ADDR(fnvm_init)):
+		{
+    	  KEEP(*(.ufnvm_data))
+		}
+	} > ufnvm_data_ram */
+	
+	GROUP :
+	{
+		.fnvm_flag:
+		{
+    	  KEEP(*(.fnvm_flag))
+		}
+	} > fnvm_data_flag
+	
+	GROUP :
+	{
+		.ufnvm_flag:
+		{
+    	  KEEP(*(.ufnvm_flag))
+		}
+	} > ufnvm_data_flag
+
+    
+}
+
+
+
+/* Freescale CodeWarrior compiler address designations */
+
+_stack_addr = ADDR(stack)+SIZEOF(stack);
+_stack_end  = ADDR(stack);
+_heap_addr  = ADDR(heap);
+_heap_end   = ADDR(heap)+SIZEOF(heap);
+
+/* If INTC HW mode is used it represents the vector base address to set
+IVPR and the location of intc_hw_branch_table section. The EXCEPTION_HANDLERS
+will point to the IVOR branch table.
+*/
+__IVPR_VALUE = ADDR(exception_handlers);
+
+/* IVOR branch table location. Used in Exceptions.c */
+EXCEPTION_HANDLERS = ADDR(.ivor_branch_table);
+
+/* L2 SRAM Location (used for L2 SRAM initialization) */
+L2SRAM_LOCATION = ADDR(internal_ram);
+
+/* How many writes with stmw, 128 bytes each, are needed to cover
+   the whole L2SRAM (used for L2 SRAM initialization) */
+L2SRAM_CNT = 0x68000 / 128;
+
+/* External SRAM module */
+START_EXTERNAL_RAM = 0x20000000;

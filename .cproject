@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule configRelations="1" moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.freescale.ppc.debug.toolchain.configuration.1469442205">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.ppc.debug.toolchain.configuration.1469442205" moduleId="org.eclipse.cdt.core.settings" name="CCFC2016BC_INTERNAL_RAM">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="CCFC2016BC_RAM_Demo" buildProperties="" buildReferences="true" buildReferencingConfigurations="false" cleanCommand="&quot;${system:ECLIPSE_HOME}/../gnu/bin/rm&quot; -f" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser;" id="com.freescale.ppc.debug.toolchain.configuration.1469442205" isPrebuildInvalidatingBuild="false" isVersionInfoProjSpecific="false" name="CCFC2016BC_INTERNAL_RAM" parent="com.freescale.ppc.debug.toolchain.configuration" produceBuildErrorsWithMissingReferences="true">
+					<folderInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.ppc.debug.toolchain.toolchain.1297928385" name="PowerPC Debug Toolchain" superClass="com.freescale.ppc.debug.toolchain.toolchain">
+							<option id="com.freescale.ppc.debug.toolchain.sharedoption.dwarf.1302148221" name="Generate DWARF Information" superClass="com.freescale.ppc.debug.toolchain.sharedoption.dwarf" value="com.freescale.ppc.toolchain.sharedoption.dwarf.2" valueType="enumerated"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.processor.571107897" name="Processor" superClass="com.freescale.ppc.toolchain.sharedoption.processor" value="com.freescale.ppc.toolchain.sharedoption.processor.zen" valueType="enumerated"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.sym.430013098" name="Store Full Paths To Source Files" superClass="com.freescale.ppc.toolchain.sharedoption.sym" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.ppc.toolchain.platform.1525458302" name="PowerPC Target Platform" superClass="com.freescale.ppc.toolchain.platform"/>
+							<builder buildPath="${ProjDirPath}/CCFC2016BC_INTERNAL_RAM" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" id="com.freescale.ppc.toolchain.builder.1816052771" keepEnvironmentInBuildfile="false" name="Make Builder" parallelBuildOn="true" parallelBuildWorkspaceOn="true" parallelizationNumber="optimal" superClass="com.freescale.ppc.toolchain.builder"/>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.linker.1975297370" name="PowerPC Linker" superClass="com.freescale.ppc.toolchain.linker">
+								<option id="com.freescale.ppc.toolchain.linker.base.input.entrypoint.1238514452" name="Entry Point:" superClass="com.freescale.ppc.toolchain.linker.base.input.entrypoint" value="__startup" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.codeAddress.505767165" name="Code Address" superClass="com.freescale.ppc.toolchain.linker.base.input.codeAddress" value="0x2000" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.dataAddress.257746640" name="Data Address" superClass="com.freescale.ppc.toolchain.linker.base.input.dataAddress" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.smallDataAddress.1358334295" name="Small Data Address" superClass="com.freescale.ppc.toolchain.linker.base.input.smallDataAddress" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.smallData2Address.2140592618" name="Small Data 2 Address" superClass="com.freescale.ppc.toolchain.linker.base.input.smallData2Address" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lpath.130726878" name="Library Search Paths" superClass="com.freescale.ppc.toolchain.linker.base.input.lpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/lib&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.linker.base.general.otherflags.1110551668" name="Other Flags" superClass="com.freescale.ppc.toolchain.linker.base.general.otherflags" value="-char unsigned" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.stackAddress.24128370" name="Stack Address" superClass="com.freescale.ppc.toolchain.linker.base.output.stackAddress" value="" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lfile.1706610298" name="Library Files" superClass="com.freescale.ppc.toolchain.linker.base.input.lfile" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib/libc_E200z760_VLE.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib/librt_E200z760_VLE.a&quot;"/>
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="&quot;${ProjDirPath}/Sources/lib/libshe.a&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lcf_file.1858093794" name="Link Command File (.lcf)" superClass="com.freescale.ppc.toolchain.linker.base.input.lcf_file" value="${ProjDirPath}/Project_Settings/Linker_Files/CCFC2016BC_INT_RAM.lcf" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.generateBinaryFile.12745502" name="Generate Binary File:" superClass="com.freescale.ppc.toolchain.linker.base.generateBinaryFile" value="com.freescale.ppc.toolchain.linker.base.generateBinaryFile.one" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.linkorder.121924907" name="Link Order" superClass="com.freescale.ppc.toolchain.linker.base.input.linkorder" valueType="stringList">
+									<listOptionValue builtIn="false" value="Project_Settings/Startup_Code/CCFC2016BC_HWInit.c"/>
+									<listOptionValue builtIn="false" value="Project_Settings/Startup_Code/CCFC2016BC_Init.c"/>
+									<listOptionValue builtIn="false" value="Project_Settings/Startup_Code/CCFC2016BC_Startup.c"/>
+									<listOptionValue builtIn="false" value="Project_Settings/Startup_Code/__ppc_eabi_init.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/Exceptions.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/IntcInterrupts.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/common.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/console.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/ivor_branch_table.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/led_hw.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/sys.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/adc_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/can_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/ecsm_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/flash_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/icu_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/iic_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/intc_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/lin_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/lowpower_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/pit_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/pwm_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/rtcapi_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/spi_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/stm_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/swt_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/adc_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/can_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/ecsm_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/edma_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/flash_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/icu_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/iic_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/intc_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/lin_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/pit_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/pwm_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/rtc_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/siul_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/spi_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/stm_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/swt_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/wkpu_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/main.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/canfd_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/core_list_join.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/core_main.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/core_matrix.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/core_portme.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/core_state.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/core_util.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/dhry_1.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/timer.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/coremark/whets.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/decfilter_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/she_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/Mcu_Config.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/Mcu_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/canfd_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/decfilter_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/she_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/etpu_set/etpu/gpio/etpu_gpio.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/etpu_set/etpu/pwm/etpu_pwm.c"/>
+									<listOptionValue builtIn="false" value="Sources/demo/src/etpu_demo.c"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/etpu_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/common/src/IVOR_vle.s"/>
+									<listOptionValue builtIn="false" value="Sources/lld/src/emios_lld.c"/>
+								</option>
+								<inputType id="com.freescale.ppc.toolchain.linker.base.input.976637905" name="Linker Input" superClass="com.freescale.ppc.toolchain.linker.base.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2010891098" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler">
+								<option id="com.freescale.ppc.toolchain.compiler.base.input.include.64083881" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Headers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/common/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/demo/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/lld/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/demo/inc/coremark&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/lib&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.options.speedSpace.268693920" name="Speed vs. Size" superClass="com.freescale.ppc.toolchain.compiler.base.options.speedSpace" value="com.freescale.ppc.toolchain.compiler.base.optionCategory.optimization.speedspace.speed" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.options.inlining.bottom.up.411005330" name="Bottom-up Inlining" superClass="com.freescale.ppc.toolchain.compiler.base.options.inlining.bottom.up" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.lmwSTMW.911060577" name="Use LMW &amp; STMW" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.lmwSTMW" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.generateISEL.1769903071" name="Generate ISEL Instructions (e500/Zen)" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.generateISEL" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.translatePPCASMtoVLE.1448179444" name="Translate PPC Asm to VLE Asm (Zen)" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.translatePPCASMtoVLE" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.otherflags.prototype.1237379076" name="Require Prototypes" superClass="com.freescale.ppc.toolchain.compiler.base.general.otherflags.prototype" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.unsignedchar.1811157660" name="Use Unsigned Chars" superClass="com.freescale.ppc.toolchain.compiler.base.general.unsignedchar" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.input.include.system.1556048832" name="System Path (-I- -I)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include.system" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/Initialization_Files&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.cpp.exceptions.1251780919" name="Enable C++ Exceptions" superClass="com.freescale.ppc.toolchain.compiler.base.general.cpp.exceptions" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.otherflags.bool.845645760" name="Enable C++ 'bool' type, 'true' and 'false' Constants" superClass="com.freescale.ppc.toolchain.compiler.base.general.otherflags.bool" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.preprocessor.include.prefixfile.113677993" name="Prefix Files" superClass="com.freescale.ppc.toolchain.compiler.base.preprocessor.include.prefixfile" valueType="symbolFiles">
+									<listOptionValue builtIn="false" value="${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include/lib_ewl.prefix"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Prefix/CCFC2016BC_INT_RAM_VLE.prefix&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.warnings.implicitconv.1101875013" name="Implicit Arithmetic Conversions" superClass="com.freescale.ppc.toolchain.compiler.base.warnings.implicitconv" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.warnings.missingreturn.288560112" name="Missing 'return' Statement" superClass="com.freescale.ppc.toolchain.compiler.base.warnings.missingreturn" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.warnings.unusedexpr.1160147771" name="Expression Has No Side Effect" superClass="com.freescale.ppc.toolchain.compiler.base.warnings.unusedexpr" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.warnings.extracomma.2067010512" name="Extra Commas" superClass="com.freescale.ppc.toolchain.compiler.base.warnings.extracomma" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.enableC99.1912449714" name="Enable C99 Extensions" superClass="com.freescale.ppc.toolchain.compiler.base.general.enableC99" value="true" valueType="boolean"/>
+								<inputType id="com.freescale.ppc.toolchain.compiler.base.input.390350191" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+								<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.488122132" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.assembler.607543366" name="PowerPC Assembler" superClass="com.freescale.ppc.toolchain.assembler">
+								<inputType id="com.freescale.ppc.toolchain.assembler.base.input.782374117" name="PowerPC Assembler Input" superClass="com.freescale.ppc.toolchain.assembler.base.input"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.disassembler.1824732475" name="PowerPC Disassembler" superClass="com.freescale.ppc.toolchain.disassembler"/>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.preprocessor.1277749334" name="PowerPC Preprocessor" superClass="com.freescale.ppc.toolchain.preprocessor"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.PRC1_Sources/ivor_branch_table_p1.c" name="ivor_branch_table_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/ivor_branch_table_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.2010891098.341683951">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2010891098.341683951" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.2010891098">
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.726316236" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.794704749" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.PRC1_Sources/Exceptions_p1.c" name="Exceptions_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/Exceptions_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.2010891098.2088172787">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2010891098.2088172787" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.2010891098">
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.113556986" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.1608383510" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.PRC1_Sources/__start_p1.c" name="__start_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/__start_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.2010891098.1886330700">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2010891098.1886330700" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.2010891098">
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.1489867740" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.879078257" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.PRC1_Sources/main_p1.c" name="main_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/main_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.2010891098.236225034">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2010891098.236225034" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.2010891098">
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.818259030" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.470608336" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.PRC1_Sources/IntcInterrupts_p1.c" name="IntcInterrupts_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/IntcInterrupts_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.2010891098.1744516338">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2010891098.1744516338" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.2010891098">
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.504393534" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.192444039" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.Project_Settings/Linker_Files/MPC5674F_FLASH.lcf" name="MPC5674F_FLASH.lcf" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files/CCFC2016BC_INT_FLASH.lcf" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.Project_Headers/Exceptions_p1.h" name="Exceptions_p1.h" rcbsApplicability="disable" resourcePath="Project_Headers/Exceptions_p1.h" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.Project_Headers/IntcInterrupts_p1.h" name="IntcInterrupts_p1.h" rcbsApplicability="disable" resourcePath="Project_Headers/IntcInterrupts_p1.h" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.MPC5674F_readme.txt" name="MPC5674F_readme.txt" rcbsApplicability="disable" resourcePath="MPC5674F_readme.txt" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1469442205.Prefix/MPC5674F_FLASH_VLE.prefix" name="MPC5674F_FLASH_VLE.prefix" rcbsApplicability="disable" resourcePath="Prefix/CCFC2016BC_INT_FLASH_VLE.prefix" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="Sources/BSW/ECAL/Version/VCU/EV2274A.h|Sources/BSW/ECAL/Version/VCU/EV2274A.c|Project_Settings/Linker_Files/CCFC2016BC_INT_FLASH.lcf|Project_Settings/Linker_Files/MPC5674F_FLASH.lcf|MPC5674F_readme.txt|Prefix/MPC5674F_FLASH_VLE.prefix|Project_Settings/Startup_Code/MPC5674F_init_flash.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.ppc.debug.toolchain.configuration.1193516657">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.ppc.debug.toolchain.configuration.1193516657" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="ECO_VCU_FLS" buildProperties="" buildReferences="true" buildReferencingConfigurations="false" cleanCommand="&quot;${system:ECLIPSE_HOME}/../gnu/bin/rm&quot; -f" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser;" id="com.freescale.ppc.debug.toolchain.configuration.1193516657" isPrebuildInvalidatingBuild="false" isVersionInfoProjSpecific="false" name="Debug" parent="com.freescale.ppc.debug.toolchain.configuration" produceBuildErrorsWithMissingReferences="true">
+					<folderInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.ppc.debug.toolchain.toolchain.663187427" name="PowerPC Debug Toolchain" superClass="com.freescale.ppc.debug.toolchain.toolchain">
+							<option id="com.freescale.ppc.debug.toolchain.sharedoption.dwarf.846259006" name="Generate DWARF Information" superClass="com.freescale.ppc.debug.toolchain.sharedoption.dwarf" value="com.freescale.ppc.toolchain.sharedoption.dwarf.2" valueType="enumerated"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.processor.719124189" name="Processor" superClass="com.freescale.ppc.toolchain.sharedoption.processor" value="com.freescale.ppc.toolchain.sharedoption.processor.zen" valueType="enumerated"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.sym.1698938095" name="Store Full Paths To Source Files" superClass="com.freescale.ppc.toolchain.sharedoption.sym" value="true" valueType="boolean"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.smallData.869249109" name="Small Data" superClass="com.freescale.ppc.toolchain.sharedoption.smallData" value="8" valueType="string"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.smallData2.1904429573" name="Small Data2" superClass="com.freescale.ppc.toolchain.sharedoption.smallData2" value="8" valueType="string"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.endian.1770189716" name="Byte Ordering" superClass="com.freescale.ppc.toolchain.sharedoption.endian" value="com.freescale.ppc.toolchain.sharedoption.endian.big" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.ppc.toolchain.platform.953871054" name="PowerPC Target Platform" superClass="com.freescale.ppc.toolchain.platform"/>
+							<builder buildPath="${ProjDirPath}/Debug" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" id="com.freescale.ppc.toolchain.builder.121292394" keepEnvironmentInBuildfile="false" name="Make Builder" parallelBuildOn="true" parallelBuildWorkspaceOn="true" parallelizationNumber="optimal" superClass="com.freescale.ppc.toolchain.builder">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="CCFC2016BC_INTERNAL_RAM"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="CCFC2016BC_INTERNAL_FLASH"/>
+								</outputEntries>
+							</builder>
+							<tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} @@&quot;../ObjList.args&quot; ${INPUTS}" errorParsers="" id="com.freescale.ppc.toolchain.linker.1338291494" name="PowerPC Linker" superClass="com.freescale.ppc.toolchain.linker">
+								<option id="com.freescale.ppc.toolchain.linker.base.input.entrypoint.1179952917" name="Entry Point:" superClass="com.freescale.ppc.toolchain.linker.base.input.entrypoint" value="__startup" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.codeAddress.980181621" name="Code Address" superClass="com.freescale.ppc.toolchain.linker.base.input.codeAddress" value="0x2000" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.dataAddress.1204140238" name="Data Address" superClass="com.freescale.ppc.toolchain.linker.base.input.dataAddress" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.smallDataAddress.378069345" name="Small Data Address" superClass="com.freescale.ppc.toolchain.linker.base.input.smallDataAddress" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.smallData2Address.42018789" name="Small Data 2 Address" superClass="com.freescale.ppc.toolchain.linker.base.input.smallData2Address" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lpath.89121894" name="Library Search Paths" superClass="com.freescale.ppc.toolchain.linker.base.input.lpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Lib&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.linker.base.general.otherflags.521353712" name="Other Flags" superClass="com.freescale.ppc.toolchain.linker.base.general.otherflags" value="-char unsigned " valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.stackAddress.698549036" name="Stack Address" superClass="com.freescale.ppc.toolchain.linker.base.output.stackAddress" value="" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lfile.899141368" name="Library Files" superClass="com.freescale.ppc.toolchain.linker.base.input.lfile" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib/libc_E200z760_VLE.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib/librt_E200z760_VLE.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/lib/libshe.a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Lib/CCFC2016BC_Flash_Demo.a&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lcf_file.1668731130" name="Link Command File (.lcf)" superClass="com.freescale.ppc.toolchain.linker.base.input.lcf_file" value="${ProjDirPath}/Project_Settings/Linker_Files/CCFC2016BC_INT_FLASH.lcf" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.genROMimage.189104580" name="Generate ROM Image" superClass="com.freescale.ppc.toolchain.linker.base.output.genROMimage" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.romAddress.1307716569" name="ROM Image Address" superClass="com.freescale.ppc.toolchain.linker.base.output.romAddress" value="0x0001A000" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.ramAddress.1115306789" name="RAM Buffer Address of ROM Image" superClass="com.freescale.ppc.toolchain.linker.base.output.ramAddress" value="0x0001A000" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.generateBinaryFile.877053274" name="Generate Binary File:" superClass="com.freescale.ppc.toolchain.linker.base.generateBinaryFile" value="com.freescale.ppc.toolchain.linker.base.generateBinaryFile.none" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.linkorder.1849186989" name="Link Order" superClass="com.freescale.ppc.toolchain.linker.base.input.linkorder" valueType="stringList">
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/CCFC2016BC_HWInit.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/CCFC2016BC_Init.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/CCFC2016BC_Startup.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/__ppc_eabi_init.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/Exceptions.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/IVOR_vle.s"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/IntcInterrupts.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/_Interrupt.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/cache.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/common.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/console.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/ivor_branch_table.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/led_hw.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/sys.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/intc_SW_mode_isr_vectors_CCFC2016BC.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/ASW_IO_Init.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/ASW_Schedule.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/CANController_t1.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/DataDef_NVM.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/EcoCoder_msFreeCounter.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/LLD_InitConf.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/Service_CAN.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/Service_LIN.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/const_params.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/div_nzp_repeat_u32.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_iflf_binlca.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_is16lu32n32ys16D_604HKI8a.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_is32lu32n32ys32D_6T5e8AIH.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_is8lu32n32ys8Ds1_x3Gy6nio.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_iu16lftf_binlca.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_iu16lu32n32yu16D_JJypPbkr.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_iu32lu32n32yu32I_l2d71d0D.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look1_iu8lu32n32yu8Ds1_txMOwbiC.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look2_iflf_binlca.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look2_is16lu32n32ys16D_sR94aEbM.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look2_is32lu32n32ys32D_mgJCjr3e.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look2_is8lu32n32ys8Ds1_vjp6iKRX.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look2_iu16lu32n32yu16D_sexeCIjh.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look2_iu32lu32n32yu32I_PttKs1Ai.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/look2_iu8lu32n32yu8Ds1_rvnqzdUY.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/main.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/mul_s32_s32_u32_sr17.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/mul_s32_s32_u32_sr32.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/mul_s32_s32_u32_sr9.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/mul_u32_u32_u32_sr33.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/mul_wide_su32.c"/>
+									<listOptionValue builtIn="false" value="src/ASW_Sources/mul_wide_u32.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/Service/SYS/Sys/Abstraction_Sys_temp.c"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.linkorder.enabled.540371829" name="Customize linker input order:" superClass="com.freescale.ppc.toolchain.linker.base.input.linkorder.enabled" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.generateSrec.eol.1179886862" name="EOL Character:" superClass="com.freescale.ppc.toolchain.linker.base.generateSrec.eol" value="com.freescale.ppc.toolchain.linker.base.generateSrec.unix" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.optionCategory.heapSize.760940386" name="Heap Size (k)" superClass="com.freescale.ppc.toolchain.linker.base.optionCategory.heapSize" value="4" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.general.linkMode.723823220" name="Link Mode" superClass="com.freescale.ppc.toolchain.linker.base.general.linkMode" value="com.freescale.ppc.toolchain.linker.base.general.linkMode.more" valueType="enumerated"/>
+								<inputType id="com.freescale.ppc.toolchain.linker.base.input.1923317990" name="Linker Input" superClass="com.freescale.ppc.toolchain.linker.base.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.272607959" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler">
+								<option id="com.freescale.ppc.toolchain.compiler.base.input.include.1461473988" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/ASW_Libs&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src/ASW_Sources&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/UDS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/OnBoard/Power/FS6500&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/OS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/lld/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/Initialization_Files&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version/VCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/SYS/MCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/SYS/Sys&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_CAN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/COM_CAN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_EXINT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_INTC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_GPIO&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_I2C&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_SPI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/IO_AI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_ADC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/IO_DI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/OnBoard/CAN_T/TJA1145&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/IO_POWER&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/MEM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/MEM_EEPROM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/OnBoard/Memory/EE25LC512&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH/flash_driver&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/Task&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/OnBoard/Memory/BL24C512A&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.options.speedSpace.88221004" name="Speed vs. Size" superClass="com.freescale.ppc.toolchain.compiler.base.options.speedSpace" value="com.freescale.ppc.toolchain.compiler.base.optionCategory.optimization.speedspace.speed" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.options.inlining.bottom.up.1074489503" name="Bottom-up Inlining" superClass="com.freescale.ppc.toolchain.compiler.base.options.inlining.bottom.up" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.lmwSTMW.1075013675" name="Use LMW &amp; STMW" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.lmwSTMW" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.generateISEL.272467380" name="Generate ISEL Instructions (e500/Zen)" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.generateISEL" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.translatePPCASMtoVLE.951837009" name="Translate PPC Asm to VLE Asm (Zen)" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.translatePPCASMtoVLE" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.otherflags.prototype.2496862" name="Require Prototypes" superClass="com.freescale.ppc.toolchain.compiler.base.general.otherflags.prototype" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.unsignedchar.498678481" name="Use Unsigned Chars" superClass="com.freescale.ppc.toolchain.compiler.base.general.unsignedchar" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.input.include.system.1069753170" name="System Path (-I- -I)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include.system"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.cpp.exceptions.150855575" name="Enable C++ Exceptions" superClass="com.freescale.ppc.toolchain.compiler.base.general.cpp.exceptions" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.otherflags.bool.213762234" name="Enable C++ 'bool' type, 'true' and 'false' Constants" superClass="com.freescale.ppc.toolchain.compiler.base.general.otherflags.bool" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.preprocessor.include.prefixfile.1777993249" name="Prefix Files" superClass="com.freescale.ppc.toolchain.compiler.base.preprocessor.include.prefixfile" valueType="symbolFiles">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Prefix/CCFC2016BC_INT_FLASH_VLE.prefix&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include/lib_ewl.prefix&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.warnings.implicitconv.1640768533" name="Implicit Arithmetic Conversions" superClass="com.freescale.ppc.toolchain.compiler.base.warnings.implicitconv" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.preprocessor.macroDefined.1006146840" name="Defined Macros (-D)" superClass="com.freescale.ppc.toolchain.compiler.base.preprocessor.macroDefined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CONFIG_FLASH=1"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.enableC99.1325085265" name="Enable C99 Extensions" superClass="com.freescale.ppc.toolchain.compiler.base.general.enableC99" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.enableGCC.495878057" name="Enable GCC Extensions" superClass="com.freescale.ppc.toolchain.compiler.base.general.enableGCC" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.debugging.nosyspath.1256083483" name="Always Search User Paths" superClass="com.freescale.ppc.toolchain.compiler.base.debugging.nosyspath" value="true" valueType="boolean"/>
+								<inputType id="com.freescale.ppc.toolchain.compiler.base.input.2031070737" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+								<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.144581526" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.assembler.1748491578" name="PowerPC Assembler" superClass="com.freescale.ppc.toolchain.assembler">
+								<option id="com.freescale.ppc.toolchain.assembler.base.input.include.665905164" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.assembler.base.input.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/Initialization_Files&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/ic&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/oc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/pwm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc/coremark&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/lld/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/OS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version/VCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/SYS/MCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT&quot;"/>
+								</option>
+								<inputType id="com.freescale.ppc.toolchain.assembler.base.input.104943812" name="PowerPC Assembler Input" superClass="com.freescale.ppc.toolchain.assembler.base.input"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.disassembler.217583374" name="PowerPC Disassembler" superClass="com.freescale.ppc.toolchain.disassembler"/>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.preprocessor.1780709129" name="PowerPC Preprocessor" superClass="com.freescale.ppc.toolchain.preprocessor"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.PRC1_Sources/ivor_branch_table_p1.c" name="ivor_branch_table_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/ivor_branch_table_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.272607959.2066843722">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.272607959.2066843722" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.272607959">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.944266" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.336624035" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.1630733" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.PRC1_Sources/Exceptions_p1.c" name="Exceptions_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/Exceptions_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.272607959.90575679">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.272607959.90575679" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.272607959">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.2026359009" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.860101971" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.10625973" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.PRC1_Sources/__start_p1.c" name="__start_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/__start_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.272607959.199613514">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.272607959.199613514" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.272607959">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.1377488182" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.1053537917" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.2075194471" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.PRC1_Sources/main_p1.c" name="main_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/main_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.272607959.771738478">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.272607959.771738478" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.272607959">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.1981775640" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.1820436219" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.1762292647" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.PRC1_Sources/IntcInterrupts_p1.c" name="IntcInterrupts_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/IntcInterrupts_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.272607959.341330527">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.272607959.341330527" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.272607959">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.93404531" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.655697562" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.552320418" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.Project_Headers/Exceptions_p1.h" name="Exceptions_p1.h" rcbsApplicability="disable" resourcePath="Project_Headers/Exceptions_p1.h" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.Project_Headers/IntcInterrupts_p1.h" name="IntcInterrupts_p1.h" rcbsApplicability="disable" resourcePath="Project_Headers/IntcInterrupts_p1.h" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.Project_Settings/Linker_Files/MPC5674F_RAM.lcf" name="MPC5674F_RAM.lcf" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files/CCFC2016BC_INT_RAM.lcf" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.MPC5674F_readme.txt" name="MPC5674F_readme.txt" rcbsApplicability="disable" resourcePath="MPC5674F_readme.txt" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.Prefix/MPC5674F_RAM_VLE.prefix" name="MPC5674F_RAM_VLE.prefix" rcbsApplicability="disable" resourcePath="Prefix/CCFC2016BC_INT_RAM_VLE.prefix" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="Sources/BSW/MCAL_CCFC2016BC/lld/src/iic_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/inc/iic_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/src/etpu_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/inc/etpu_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/src/canfd_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/src/can_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/src/adc_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/inc/canfd_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/inc/can_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/inc/adc_lld.h|Sources/ASW/demo|Sources/BSW/ECAL|Project_Settings/Linker_Files/MPC5674F_RAM.lcf|Sources/BSW/MCAL_CCFC2017BC/MCBL_|MPC5674F_readme.txt|Project_Settings/Linker_Files/CCFC2016BC_INT_RAM.lcf|Prefix/MPC5674F_RAM_VLE.prefix|Sources/BSW/MCAL_CCFC2017BC/MCAL|Sources/BSW/Service|Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT|Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM|Sources/BSW/MCAL_CCFC2016BC/MCAL|Project_Settings/Startup_Code/MPC5674F_init_ram.c|Sources/BSW/MCAL_CCFC2016BC/MCBL_" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/COM_CAN"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/IO_AI"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/IO_DI"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/IO_POWER"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/MEM_EEPROM"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/OnBoard/CAN_T/TJA1145"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/OnBoard/Memory"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/Version"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_CAN"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_I2C"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_SPI"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_ADC"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_GPIO"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_EXINT"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_INTC"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/MEM"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/OS"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/SYS/MCU"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/SYS/Sys"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/Task"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/UDS"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498" moduleId="org.eclipse.cdt.core.settings" name="Lib">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.managedbuilder.core.ManagedBuildManager" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LltErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.CobjErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.LnkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="CCFC2016BC_Flash_Demo" buildProperties="" buildReferences="true" buildReferencingConfigurations="false" cleanCommand="&quot;${system:ECLIPSE_HOME}/../gnu/bin/rm&quot; -f" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwfeErrorParser;com.freescale.core.ide.cdt.errorParsers.LnkErrorParser;com.freescale.core.ide.cdt.errorParsers.AsmErrorParser;com.freescale.core.ide.cdt.errorParsers.CobjErrorParser;com.freescale.core.ide.cdt.errorParsers.IcodeErrorParser;com.freescale.core.ide.cdt.errorParsers.LltErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser;" id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498" isPrebuildInvalidatingBuild="false" isVersionInfoProjSpecific="false" name="Lib" parent="com.freescale.ppc.debug.toolchain.configuration" produceBuildErrorsWithMissingReferences="true">
+					<folderInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498." name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.ppc.debug.toolchain.toolchain.1608075579" name="PowerPC Debug Toolchain" superClass="com.freescale.ppc.debug.toolchain.toolchain">
+							<option id="com.freescale.ppc.debug.toolchain.sharedoption.dwarf.763745086" name="Generate DWARF Information" superClass="com.freescale.ppc.debug.toolchain.sharedoption.dwarf" value="com.freescale.ppc.toolchain.sharedoption.dwarf.2" valueType="enumerated"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.processor.2031365190" name="Processor" superClass="com.freescale.ppc.toolchain.sharedoption.processor" value="com.freescale.ppc.toolchain.sharedoption.processor.zen" valueType="enumerated"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.sym.1639787421" name="Store Full Paths To Source Files" superClass="com.freescale.ppc.toolchain.sharedoption.sym" value="true" valueType="boolean"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.smallData.451364986" name="Small Data" superClass="com.freescale.ppc.toolchain.sharedoption.smallData" value="8" valueType="string"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.smallData2.1055122609" name="Small Data2" superClass="com.freescale.ppc.toolchain.sharedoption.smallData2" value="8" valueType="string"/>
+							<option id="com.freescale.ppc.toolchain.sharedoption.endian.471131365" name="Byte Ordering" superClass="com.freescale.ppc.toolchain.sharedoption.endian" value="com.freescale.ppc.toolchain.sharedoption.endian.big" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.ppc.toolchain.platform.647862369" name="PowerPC Target Platform" superClass="com.freescale.ppc.toolchain.platform"/>
+							<builder buildPath="${ProjDirPath}/Lib" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;com.freescale.core.ide.cdt.errorParsers.MwErrorParser;com.freescale.core.ide.cdt.errorParsers.MPWErrorParser" id="com.freescale.ppc.toolchain.builder.579642609" keepEnvironmentInBuildfile="false" name="Make Builder" parallelBuildOn="true" parallelBuildWorkspaceOn="true" parallelizationNumber="optimal" superClass="com.freescale.ppc.toolchain.builder">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="CCFC2016BC_INTERNAL_RAM"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="CCFC2016BC_INTERNAL_FLASH"/>
+								</outputEntries>
+							</builder>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.linker.966602251" name="PowerPC Linker" superClass="com.freescale.ppc.toolchain.linker">
+								<option id="com.freescale.ppc.toolchain.linker.base.input.entrypoint.1567555827" name="Entry Point:" superClass="com.freescale.ppc.toolchain.linker.base.input.entrypoint" value="__startup" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.codeAddress.1544961783" name="Code Address" superClass="com.freescale.ppc.toolchain.linker.base.input.codeAddress" value="0x2000" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.dataAddress.1772072912" name="Data Address" superClass="com.freescale.ppc.toolchain.linker.base.input.dataAddress" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.smallDataAddress.715527467" name="Small Data Address" superClass="com.freescale.ppc.toolchain.linker.base.input.smallDataAddress" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.smallData2Address.1848219899" name="Small Data 2 Address" superClass="com.freescale.ppc.toolchain.linker.base.input.smallData2Address" value="0x0" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lpath.162340687" name="Library Search Paths" superClass="com.freescale.ppc.toolchain.linker.base.input.lpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version/VCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/SYS/MCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/ic&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/oc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/pwm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc/coremark&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/lld/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/OS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/Initialization_Files&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.linker.base.general.otherflags.1614321840" name="Other Flags" superClass="com.freescale.ppc.toolchain.linker.base.general.otherflags" value="-char unsigned" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.stackAddress.1277006438" name="Stack Address" superClass="com.freescale.ppc.toolchain.linker.base.output.stackAddress" value="" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lfile.461037206" name="Library Files" superClass="com.freescale.ppc.toolchain.linker.base.input.lfile"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.lcf_file.137565444" name="Link Command File (.lcf)" superClass="com.freescale.ppc.toolchain.linker.base.input.lcf_file" value="${ProjDirPath}/Project_Settings/Linker_Files/CCFC2016BC_INT_FLASH.lcf" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.genROMimage.115369372" name="Generate ROM Image" superClass="com.freescale.ppc.toolchain.linker.base.output.genROMimage" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.romAddress.1436592914" name="ROM Image Address" superClass="com.freescale.ppc.toolchain.linker.base.output.romAddress" value="0x0001A000" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.output.ramAddress.2085487354" name="RAM Buffer Address of ROM Image" superClass="com.freescale.ppc.toolchain.linker.base.output.ramAddress" value="0x0001A000" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.generateBinaryFile.2024105319" name="Generate Binary File:" superClass="com.freescale.ppc.toolchain.linker.base.generateBinaryFile" value="com.freescale.ppc.toolchain.linker.base.generateBinaryFile.none" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.linkorder.1138593384" name="Link Order" superClass="com.freescale.ppc.toolchain.linker.base.input.linkorder" valueType="stringList">
+									<listOptionValue builtIn="false" value="Sources/ASW/main.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/CCFC2016BC_HWInit.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/CCFC2016BC_Init.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/CCFC2016BC_Startup.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code/__ppc_eabi_init.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/Exceptions.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/IVOR_vle.s"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/IntcInterrupts.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/_Interrupt.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/cache.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/common.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/console.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/ivor_branch_table.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/led_hw.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/sys.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/Mcu_Config.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/Mcu_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/decfilter_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/ecsm_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/edma_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/emios_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/flash_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/icu_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/intc_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/lin_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/pit_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/pwm_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/rtc_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/she_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/siul_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/spi8_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/spi_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/stm_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/swt_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/lld/src/wkpu_lld.c"/>
+									<listOptionValue builtIn="false" value="Sources/ASW/ASW_Schedule.c"/>
+									<listOptionValue builtIn="false" value="Sources/ASW/LLD_InitConf.c"/>
+									<listOptionValue builtIn="false" value="Sources/ASW/T_CCFC2016BC_EVB.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/Version/Ecal_Version.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/Version/VCU/CCFC2016BC_EVB.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT/MCAL_GPT.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM/MCAL_STM.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT/MCAL_SWT.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCBL/common/src/intc_SW_mode_isr_vectors_CCFC2016BC.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/Service/OS/os_main.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/Service/SYS/MCU/Abstraction_MCU.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/Version/VCU/EV2274A.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_CAN/MCAL_CAN.c"/>
+									<listOptionValue builtIn="false" value="Sources/ASW/Service_CAN.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/COM_CAN/Abstraction_CAN.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/IO_AI/Abstraction_ADC.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/IO_DI/Abstraction_DI.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/IO_POWER/Abstraction_Power.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/MEM_EEPROM/Abstraction_EEPROM.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/OnBoard/CAN_T/TJA1145/TJA1145.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/OnBoard/Memory/BL24C512A/BL24C512A.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/ECAL/OnBoard/Memory/EE25LC512/EE25LC512.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_I2C/MCAL_I2C.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_SPI/MCAL_SPI.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_ADC/MCAL_ADC.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_GPIO/MCAL_GPIO.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_EXINT/MCAL_EXINT.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_INTC/Mcal_INTC.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH/MCAL_FLASH.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH/flash_driver/flash_driver.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/Service/MEM/ser_mem.c"/>
+									<listOptionValue builtIn="false" value="Sources/BSW/Service/Task/ser_task.c"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.linker.base.input.linkorder.enabled.262174511" name="Customize linker input order:" superClass="com.freescale.ppc.toolchain.linker.base.input.linkorder.enabled" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.generateSrec.eol.2064818311" name="EOL Character:" superClass="com.freescale.ppc.toolchain.linker.base.generateSrec.eol" value="com.freescale.ppc.toolchain.linker.base.generateSrec.unix" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.optionCategory.heapSize.108381573" name="Heap Size (k)" superClass="com.freescale.ppc.toolchain.linker.base.optionCategory.heapSize" value="4" valueType="string"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.general.linkMode.1163802564" name="Link Mode" superClass="com.freescale.ppc.toolchain.linker.base.general.linkMode" value="com.freescale.ppc.toolchain.linker.base.general.linkMode.more" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.linker.base.optionCategory.projectOption.1285215686" name="Output Type" superClass="com.freescale.ppc.toolchain.linker.base.optionCategory.projectOption" value="com.freescale.ppc.toolchain.linker.base.optionCategory.projectOption.library" valueType="enumerated"/>
+								<inputType id="com.freescale.ppc.toolchain.linker.base.input.1791411810" name="Linker Input" superClass="com.freescale.ppc.toolchain.linker.base.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.920107030" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler">
+								<option id="com.freescale.ppc.toolchain.compiler.base.input.include.119043241" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/OS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/lld/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc/coremark&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/pwm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/oc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/ic&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/Initialization_Files&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version/VCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/SYS/MCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_CAN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/COM_CAN&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_EXINT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_INTC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_GPIO&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_I2C&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_SPI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/IO_AI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_ADC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/IO_DI&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/OnBoard/CAN_T/TJA1145&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/IO_POWER&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/MEM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/MEM_EEPROM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/OnBoard/Memory/EE25LC512&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH/flash_driver&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/Task&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/OnBoard/Memory/BL24C512A&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.options.speedSpace.884026880" name="Speed vs. Size" superClass="com.freescale.ppc.toolchain.compiler.base.options.speedSpace" value="com.freescale.ppc.toolchain.compiler.base.optionCategory.optimization.speedspace.speed" valueType="enumerated"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.options.inlining.bottom.up.786949273" name="Bottom-up Inlining" superClass="com.freescale.ppc.toolchain.compiler.base.options.inlining.bottom.up" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.lmwSTMW.925909750" name="Use LMW &amp; STMW" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.lmwSTMW" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.generateISEL.1265771022" name="Generate ISEL Instructions (e500/Zen)" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.generateISEL" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.translatePPCASMtoVLE.960717683" name="Translate PPC Asm to VLE Asm (Zen)" superClass="com.freescale.ppc.toolchain.compiler.base.optionCategory.processor.translatePPCASMtoVLE" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.otherflags.prototype.764936082" name="Require Prototypes" superClass="com.freescale.ppc.toolchain.compiler.base.general.otherflags.prototype" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.unsignedchar.1415894723" name="Use Unsigned Chars" superClass="com.freescale.ppc.toolchain.compiler.base.general.unsignedchar" value="true" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.input.include.system.291860056" name="System Path (-I- -I)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include.system"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.cpp.exceptions.2078835592" name="Enable C++ Exceptions" superClass="com.freescale.ppc.toolchain.compiler.base.general.cpp.exceptions" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.otherflags.bool.954323287" name="Enable C++ 'bool' type, 'true' and 'false' Constants" superClass="com.freescale.ppc.toolchain.compiler.base.general.otherflags.bool" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.preprocessor.include.prefixfile.453354098" name="Prefix Files" superClass="com.freescale.ppc.toolchain.compiler.base.preprocessor.include.prefixfile" valueType="symbolFiles">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Prefix/CCFC2016BC_INT_FLASH_VLE.prefix&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include/lib_ewl.prefix&quot;"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.warnings.implicitconv.876918024" name="Implicit Arithmetic Conversions" superClass="com.freescale.ppc.toolchain.compiler.base.warnings.implicitconv" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.preprocessor.macroDefined.566945721" name="Defined Macros (-D)" superClass="com.freescale.ppc.toolchain.compiler.base.preprocessor.macroDefined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CONFIG_FLASH=1"/>
+								</option>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.enableC99.1371884733" name="Enable C99 Extensions" superClass="com.freescale.ppc.toolchain.compiler.base.general.enableC99" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.general.enableGCC.1638829442" name="Enable GCC Extensions" superClass="com.freescale.ppc.toolchain.compiler.base.general.enableGCC" value="false" valueType="boolean"/>
+								<option id="com.freescale.ppc.toolchain.compiler.base.debugging.nosyspath.1772672956" name="Always Search User Paths" superClass="com.freescale.ppc.toolchain.compiler.base.debugging.nosyspath" value="true" valueType="boolean"/>
+								<inputType id="com.freescale.ppc.toolchain.compiler.base.input.1002267985" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+								<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.994242448" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.assembler.1318955876" name="PowerPC Assembler" superClass="com.freescale.ppc.toolchain.assembler">
+								<option id="com.freescale.ppc.toolchain.assembler.base.input.include.2006386706" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.assembler.base.input.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${PAToolsBaseDir}/PA_Support/Initialization_Files&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/ic&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/oc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/gpio&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/etpu/pwm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/etpu_set/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/ASW/demo/inc/coremark&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/lld/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/OS&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version/VCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/ECAL/Version&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/Service/SYS/MCU&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT&quot;"/>
+								</option>
+								<inputType id="com.freescale.ppc.toolchain.assembler.base.input.201960040" name="PowerPC Assembler Input" superClass="com.freescale.ppc.toolchain.assembler.base.input"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.disassembler.352196476" name="PowerPC Disassembler" superClass="com.freescale.ppc.toolchain.disassembler"/>
+							<tool errorParsers="" id="com.freescale.ppc.toolchain.preprocessor.787308331" name="PowerPC Preprocessor" superClass="com.freescale.ppc.toolchain.preprocessor"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.PRC1_Sources/ivor_branch_table_p1.c" name="ivor_branch_table_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/ivor_branch_table_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.2102542246">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2102542246" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.920107030">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.799426699" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.1438226793" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.1314653806" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.PRC1_Sources/Exceptions_p1.c" name="Exceptions_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/Exceptions_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.2067034512">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.2067034512" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.920107030">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.86831975" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.720749108" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.775223942" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.PRC1_Sources/__start_p1.c" name="__start_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/__start_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.319167141">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.319167141" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.920107030">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.925699445" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.2125448888" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.414246815" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.PRC1_Sources/main_p1.c" name="main_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/main_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.219973713">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.219973713" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.920107030">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.102002906" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.1787096870" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.798288272" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.PRC1_Sources/IntcInterrupts_p1.c" name="IntcInterrupts_p1.c" rcbsApplicability="disable" resourcePath="PRC1_Sources/IntcInterrupts_p1.c" toolsToInvoke="com.freescale.ppc.toolchain.compiler.1012098605">
+						<tool errorParsers="" id="com.freescale.ppc.toolchain.compiler.1012098605" name="PowerPC Compiler" superClass="com.freescale.ppc.toolchain.compiler.920107030">
+							<option id="com.freescale.ppc.toolchain.compiler.base.input.include.264353574" name="User Path (-i)" superClass="com.freescale.ppc.toolchain.compiler.base.input.include" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/lib"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/ECAL/Version/VCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/SYS/MCU"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/ic"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/oc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/_etpu_set/cpu"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/gpio"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/etpu/pwm"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/etpu_set/include"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/ASW/demo/inc/coremark"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Project_Headers"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/common/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/lld/inc"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/Service/OS"/>
+								<listOptionValue builtIn="false" value="D:/1.BSW_Develop/CCFC2017BC/CCFC2016BC_VCU/Sources/BSW/MCAL_CCFC2016BC/MCBL/Startup_Code"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_C/include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/ewl/EWL_Runtime/Runtime_PA/Include&quot;"/>
+								<listOptionValue builtIn="false" value="&quot;C:/Freescale/CW MCU v10.7/MCU/PA_Support/Initialization_Files&quot;"/>
+							</option>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.314661965" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input"/>
+							<inputType id="com.freescale.ppc.toolchain.compiler.base.input.c++.792202887" name="com.freescale.ppc.toolchain.cf Compiler Input" superClass="com.freescale.ppc.toolchain.compiler.base.input.c++"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.Project_Headers/Exceptions_p1.h" name="Exceptions_p1.h" rcbsApplicability="disable" resourcePath="Project_Headers/Exceptions_p1.h" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.Project_Headers/IntcInterrupts_p1.h" name="IntcInterrupts_p1.h" rcbsApplicability="disable" resourcePath="Project_Headers/IntcInterrupts_p1.h" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.Project_Settings/Linker_Files/CCFC2016BC_INT_RAM.lcf" name="MPC5674F_RAM.lcf" rcbsApplicability="disable" resourcePath="Project_Settings/Linker_Files/CCFC2016BC_INT_RAM.lcf" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.MPC5674F_readme.txt" name="MPC5674F_readme.txt" rcbsApplicability="disable" resourcePath="MPC5674F_readme.txt" toolsToInvoke=""/>
+					<fileInfo id="com.freescale.ppc.debug.toolchain.configuration.1193516657.1929401498.Prefix/CCFC2016BC_INT_RAM_VLE.prefix" name="MPC5674F_RAM_VLE.prefix" rcbsApplicability="disable" resourcePath="Prefix/CCFC2016BC_INT_RAM_VLE.prefix" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="src|Sources/BSW/MCAL_CCFC2016BC/MCBL|Sources/BSW/MCAL_CCFC2016BC/lld/src/iic_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/inc/iic_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/src/etpu_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/inc/etpu_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/src/canfd_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/src/can_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/src/adc_lld.c|Sources/BSW/MCAL_CCFC2016BC/lld/inc/canfd_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/inc/can_lld.h|Sources/BSW/MCAL_CCFC2016BC/lld/inc/adc_lld.h|Sources/ASW/demo|Sources/BSW/ECAL|Project_Settings/Linker_Files/MPC5674F_RAM.lcf|Sources/BSW/MCAL_CCFC2017BC/MCBL_|MPC5674F_readme.txt|Project_Settings/Linker_Files/CCFC2016BC_INT_RAM.lcf|Prefix/MPC5674F_RAM_VLE.prefix|Sources/BSW/MCAL_CCFC2017BC/MCAL|Sources/BSW/Service|Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT|Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM|Sources/BSW/MCAL_CCFC2016BC/MCAL|Project_Settings/Startup_Code/MPC5674F_init_ram.c|Sources/BSW/MCAL_CCFC2016BC/MCBL_" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/COM_CAN"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/IO_AI"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/IO_DI"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/IO_POWER"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/MEM_EEPROM"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/OnBoard/CAN_T/TJA1145"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/OnBoard/Memory"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/ECAL/Version"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_CAN"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_I2C"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/COM_SPI"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_ADC"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/IO_GPIO"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_EXINT"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_GPT"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_INTC"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_STM"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MCU_SWT"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/MCAL_CCFC2016BC/MCAL/MEM_FLASH"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/MEM"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/OS"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/SYS/MCU"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources/BSW/Service/Task"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="CCFC2016BC_Flash_Demo.com.freescale.ppc.toolchain.projecttype.224613206" name="Freescale PowerPC" projectType="com.freescale.ppc.toolchain.projecttype"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="FLASH">
+			<resource resourceType="PROJECT" workspacePath="/ARCH2D16_M0I5C2016BC"/>
+		</configuration>
+		<configuration configurationName="RAM">
+			<resource resourceType="PROJECT" workspacePath="/ARCH2D16_M0I5C2016BC"/>
+		</configuration>
+		<configuration configurationName="Lib"/>
+		<configuration configurationName="CCFC2016BC_INTERNAL_RAM">
+			<resource resourceType="PROJECT" workspacePath="/ARCH2D16_M1I7C2016BC"/>
+		</configuration>
+		<configuration configurationName="CCFC2017BC_INTERNAL_FLASH">
+			<resource resourceType="PROJECT" workspacePath="/CCFC2017BC_VCU"/>
+		</configuration>
+		<configuration configurationName="CCFC2017BC_INTERNAL_RAM"/>
+		<configuration configurationName="CCFC2016BC_INTERNAL_FLASH">
+			<resource resourceType="PROJECT" workspacePath="/ARCH2D16_M1I7C2016BC"/>
+		</configuration>
+	</storageModule>
+</cproject>
